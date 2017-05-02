@@ -1,0 +1,18 @@
+--- process-cpp/cmake/FindGtest.cmake.omv~	2017-05-02 23:04:50.072421934 +0200
++++ process-cpp/cmake/FindGtest.cmake	2017-05-02 23:05:13.853194274 +0200
+@@ -40,11 +40,11 @@ ExternalProject_Add(
+     INSTALL_COMMAND ""
+ )
+ 
+-set(GMOCK_LIBRARY ${GMOCK_BINARY_DIR}/libgmock.a)
+-set(GMOCK_MAIN_LIBRARY ${GMOCK_BINARY_DIR}/libgmock_main.a)
++set(GMOCK_LIBRARY -lgmock)
++set(GMOCK_MAIN_LIBRARY -lgmock_main)
+ set(GMOCK_BOTH_LIBRARIES ${GMOCK_LIBRARY} ${GMOCK_MAIN_LIBRARY})
+-set(GTEST_LIBRARY ${GTEST_BINARY_DIR}/libgtest.a)
+-set(GTEST_MAIN_LIBRARY ${GTEST_BINARY_DIR}/libgtest_main.a)
++set(GTEST_LIBRARY -lgtest)
++set(GTEST_MAIN_LIBRARY -lgtest_main)
+ set(GTEST_BOTH_LIBRARIES ${GTEST_LIBRARY} ${GTEST_MAIN_LIBRARY})
+ set(GTEST_ALL_LIBRARIES ${GTEST_BOTH_LIBRARIES} ${GMOCK_BOTH_LIBRARIES})
+ 
