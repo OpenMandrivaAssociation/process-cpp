@@ -5,7 +5,7 @@
 
 Name: process-cpp
 Version: 3.0.1
-Release: 2
+Release: 3
 Source0: %{name}-%{version}.tar.xz
 Patch0: process-cpp-system-gmock.patch
 # Tests themselves are broken...
