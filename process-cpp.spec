@@ -11,7 +11,7 @@ Patch0: process-cpp-system-gmock.patch
 # Tests themselves are broken...
 Patch1: process-cpp-disable-tests.patch
 Summary: Convenience library for handling processes in C++11
-URL: http://launchpad.net/process-cpp
+URL: https://launchpad.net/process-cpp
 License: LGPLv3
 Group: System/Libraries
 BuildRequires: cmake
