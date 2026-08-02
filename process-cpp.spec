@@ -4,8 +4,8 @@
 %define devname %mklibname process-cpp -d
 
 Name: process-cpp
-Version: 3.0.1
-Release: 3
+Version: 3.1.0
+Release: 1
 Source0: %{name}-%{version}.tar.xz
 Patch0: process-cpp-system-gmock.patch
 # Tests themselves are broken...
@@ -42,7 +42,7 @@ Requires: %{libname} = %{version}-%{release}
 Development files (Headers etc.) for %{name}.
 
 %prep
-%setup -qn %{name}
+%setup -q
 %autopatch -p1
 
 %cmake -G Ninja
